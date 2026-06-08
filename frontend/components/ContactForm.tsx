@@ -1,10 +1,22 @@
 export default function ContactForm() {
   return (
     <form>
-      <input type="text" placeholder="Your Name" />
-      <input type="email" placeholder="Your Email" />
-      <textarea placeholder="Your Message" />
-      <button type="submit">Send Message</button>
+      <div>
+        <label>Name</label>
+        <input type="text" placeholder="Your Name" />
+      </div>
+
+      <div>
+        <label>Email</label>
+        <input type="email" placeholder="Your Email" />
+      </div>
+
+      <div>
+        <label>Message</label>
+        <textarea placeholder="Your Message" />
+      </div>
+
+      <button type="submit">Submit</button>
     </form>
   );
 }
