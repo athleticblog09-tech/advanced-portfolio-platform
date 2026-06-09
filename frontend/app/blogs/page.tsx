@@ -1,8 +1,20 @@
+import BlogCard from "@/components/BlogCard";
+import { blogs } from "@/data/blogs";
+
 export default function BlogsPage() {
   return (
-    <main>
-      <h1>Blogs Page</h1>
-      <p>All blogs will be listed here.</p>
-    </main>
+    <div>
+      <h1>Blogs</h1>
+
+      {blogs.map((blog) => (
+        <BlogCard
+          key={blog.id}
+          title={blog.title}
+          summary={blog.summary}
+          tags={blog.tags}
+          readMoreUrl={blog.readMoreUrl}
+        />
+      ))}
+    </div>
   );
 }
