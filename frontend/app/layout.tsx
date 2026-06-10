@@ -10,13 +10,14 @@ const geistSans = Geist({
 });
 
 const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+  variable: "--font-geist-mono",  
   subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: "Shreeyash Patil Portfolio",
-  description: "Portfolio Website",
+  title: "Shreeyash Patil | Python Backend Developer",
+  description:
+    "Portfolio of Shreeyash Patil, a Python Backend Developer skilled in FastAPI, Django, SQL, PostgreSQL and full-stack development.",
 };
 
 export default function RootLayout({
