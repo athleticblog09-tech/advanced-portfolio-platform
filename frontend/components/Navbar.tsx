@@ -14,7 +14,7 @@ export default function Navbar() {
           <a href="/blogs" className="hover:text-black">Blogs</a>
           <a href="/contact" className="hover:text-black">Contact</a>
           <a
-            href="/resume.pdf"
+            href="/Shreeyash_Pythondevloper-1.pdf"
             className="rounded-md bg-black px-4 py-2 text-white hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200"
           >
             Resume
