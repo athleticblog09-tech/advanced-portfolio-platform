@@ -7,6 +7,7 @@ export const projects = [
     techStack: ["Python", "FastAPI", "SQLAlchemy", "SQL"],
     githubUrl: "https://github.com/athleticblog09-tech",
     detailsUrl: "/projects/crypto-trading-platform",
+    image: "/crypto-trading-platform.jpg",
   },
   {
     id: 2,
@@ -16,5 +17,6 @@ export const projects = [
     techStack: ["Python", "Django", "HTML", "CSS"],
     githubUrl: "https://github.com/athleticblog09-tech",
     detailsUrl: "/projects/coolcab",
+    image: "/coolcab.jpg"
   },
 ];
