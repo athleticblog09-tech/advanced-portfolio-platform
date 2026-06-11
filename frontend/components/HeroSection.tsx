@@ -1,7 +1,7 @@
 import Link from "next/link";
 export default function HeroSection() {
-  return (
-    <section className="mx-auto flex min-h-[70vh] max-w-6xl flex-col items-center justify-center px-6 text-center">
+  return ( 
+    <section className="mx-auto flex min-h-[30vh] max-w-6xl flex-col items-center justify-center px-6 text-center">
       <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-gray-500 dark:text-gray-400">
         Python Backend Developer
       </p>
