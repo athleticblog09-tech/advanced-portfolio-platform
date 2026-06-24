@@ -1,57 +1,21 @@
-"use client";
-
-import { useState } from "react";
 import Link from "next/link";
 
 export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
-
   return (
-    <nav className="border-b border-gray-200 bg-white dark:border-gray-800 dark:bg-black">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <Link href="/" className="text-xl font-bold text-gray-900 dark:text-white">
-          Shreeyash Patil
-        </Link>
-
-        <button
-          onClick={() => setIsOpen(!isOpen)}
-          className="text-2xl text-gray-900 dark:text-white md:hidden"
-        >
-          ☰
-        </button>
-
-        <div className="hidden items-center gap-6 text-sm font-medium text-gray-700 dark:text-gray-300 md:flex">
-          <Link href="/">Home</Link>
-          <Link href="/about">About</Link>
-          <Link href="/projects">Projects</Link>
-          <Link href="/blogs">Blogs</Link>
-          <Link href="/contact">Contact</Link>
-          <a
-            href="/resume.pdf"
-            className="rounded-md bg-black px-4 py-2 text-white hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200"
-          >
-            Resume
-          </a>
-        </div>
+    <header className="flex items-center justify-between px-12 py-6 bg-black text-white border-b border-zinc-900 fixed top-0 left-0 w-full z-50">
+      <div className="text-xl font-bold tracking-tight">
+        <Link href="/">Shreeyash Patil</Link>
       </div>
-
-      {isOpen && (
-        <div className="border-t border-gray-200 px-6 py-4 dark:border-gray-800 md:hidden">
-          <div className="flex flex-col gap-4 text-sm font-medium text-gray-700 dark:text-gray-300">
-            <Link href="/" onClick={() => setIsOpen(false)}>Home</Link>
-            <Link href="/about" onClick={() => setIsOpen(false)}>About</Link>
-            <Link href="/projects" onClick={() => setIsOpen(false)}>Projects</Link>
-            <Link href="/blogs" onClick={() => setIsOpen(false)}>Blogs</Link>
-            <Link href="/contact" onClick={() => setIsOpen(false)}>Contact</Link>
-            <a
-              href="/resume.pdf"
-              className="w-fit rounded-md bg-black px-4 py-2 text-white dark:bg-white dark:text-black"
-            >
-              Resume
-            </a>
-          </div>
-        </div>
-      )}
-    </nav>
+      <nav className="flex items-center gap-8 text-sm font-medium text-zinc-400">
+        <Link href="/" className="hover:text-white transition">Home</Link>
+        <Link href="/about" className="hover:text-white transition">About</Link>
+        <Link href="/projects" className="hover:text-white transition">Projects</Link>
+        <Link href="/blogs" className="hover:text-white transition">Blogs</Link>
+        <Link href="/contact" className="hover:text-white transition">Contact</Link>
+        <Link href="/contact" className="bg-white text-black px-4 py-2 rounded-lg font-semibold hover:bg-zinc-200 transition">
+          Resume
+        </Link>
+      </nav>
+    </header>
   );
 }
