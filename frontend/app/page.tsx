@@ -94,7 +94,7 @@ export default function HomePage() {
         >
           <motion.div variants={itemVariants} className="flex justify-between items-end border-b border-zinc-900 pb-4">
             <div>
-              <span className="text-blue-500 font-mono text-xs tracking-widest uppercase">[ PRODUCTION SYSTEMS ]</span>
+              <span className="text-blue-500 font-mono text-xs tracking-widest uppercase">[ PRODUCTION Level Projects ]</span>
               <h2 className="text-2xl font-bold text-zinc-200 tracking-tight mt-1">Featured Projects</h2>
             </div>
             <Link href="/projects" className="text-xs font-mono text-zinc-500 hover:text-blue-400 transition">
